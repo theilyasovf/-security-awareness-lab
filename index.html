@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Security Awareness Training</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.card {
+  background: white;
+  padding: 35px;
+  width: 350px;
+  max-width: calc(100% - 70px);
+  box-shadow: 0 2px 12px #0002;
+}
+.brand {
+  font-size: 22px;
+  font-weight: bold;
+  color: #444;
+}
+.notice {
+  margin-top: 25px;
+  padding: 15px;
+  background: #e8f2ff;
+  border-left: 4px solid #0078d4;
+  line-height: 1.5;
+}
+button {
+  margin-top: 20px;
+  padding: 12px;
+  width: 100%;
+  background: #0078d4;
+  color: white;
+  border: 0;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="brand">Microsoft 365</div>
+  <h2>Security Awareness</h2>
+  <p>This is a controlled phishing-awareness exercise.</p>
+  <div class="notice">
+    <strong>Training notice</strong>
+    <p>This page is a security simulation.
+    Never enter your real password or verification code
+    into an unexpected link.</p>
+  </div>
+  <button onclick="document.getElementById('result').hidden=false">
+    Complete training
+  </button>
+  <p id="result" hidden>
+    Training completed! You recognized the security exercise.
+  </p>
+</div>
+</body>
+</html>
